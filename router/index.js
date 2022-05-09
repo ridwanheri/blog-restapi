@@ -25,10 +25,9 @@ router.put(`${apiVer}/articles/:articleId`, updateArticle);
 router.delete(`${apiVer}/articles/:articleId`, deleteArticle);
 
 // comment
-router.get(`${apiVer}/articles`, getComments);
-router.get(`${apiVer}/articles/:author`, createComment);
-router.post(`${apiVer}/articles`, updateComment);
-router.put(`${apiVer}/articles/:articleId`, updateArticle);
-router.delete(`${apiVer}/articles/:articleId`, deleteComment);
+router.get(`${apiVer}/comments`, getComments);
+router.post(`${apiVer}/comments`, createComment);
+router.put(`${apiVer}/comments/:commentId`, updateComment);
+router.delete(`${apiVer}/comments/:commentId`, deleteComment);
 
 module.exports = router;
