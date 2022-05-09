@@ -26,7 +26,7 @@ router.delete(`${apiVer}/articles/:articleId`, deleteArticle);
 
 // comment
 router.get(`${apiVer}/comments`, getComments);
-router.post(`${apiVer}/comments`, createComment);
+router.post(`${apiVer}/comments/:articleId`, createComment);
 router.put(`${apiVer}/comments/:commentId`, updateComment);
 router.delete(`${apiVer}/comments/:commentId`, deleteComment);
 

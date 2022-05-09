@@ -21,6 +21,7 @@ const getComments = async (req, res) => {
 const createComment = async (req, res) => {
     try {
         const comment = new Comment({
+            articleId: req.params.articleId,
             title: req.body.title,
             content: req.body.content,
             author: req.body.author,
